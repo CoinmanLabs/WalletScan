@@ -7,7 +7,6 @@ import Layer from "@pages/Layer/index.jsx";
 import Mirror from "@pages/Mirror/index.jsx";
 import Coffee from "@pages/Coffee/index.jsx";
 import Deposit from "@pages/Deposit/index.jsx";
-import Notice from "@components/Notice/index.jsx";
 
 function MainPage() {
     const location = useLocation()
@@ -18,7 +17,7 @@ function MainPage() {
                 minHeight: "100vh",
             }}
         >
-            <Notice/>
+           
             <Layout>
                 <div
                     style={{
@@ -52,7 +51,7 @@ function MainPage() {
                         {location.pathname === "/stark" && <Stark/>}
                         {location.pathname === "/layer" && <Layer/>}
                         {location.pathname === "/mirror" && <Mirror/>}
-                        {location.pathname === "/coffee" && <Coffee/>}
+                       
                         {location.pathname === "/deposit" && <Deposit/>}
                     </div>
                 </div>
